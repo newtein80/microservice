@@ -101,4 +101,12 @@
     - ResourceNotFoundException
   - 공통 String 변수 클래스
     - AccountsConstants
+
+### Section 01 - 6
+
+  - Controller 추가, Swagger 코드 추가
+    - AccountsController
+  - 요청 및 응답 DTO 추가
+    - ErrorResponseDto
+    - ResponseDto
   
