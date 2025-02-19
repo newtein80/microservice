@@ -119,3 +119,10 @@
     - `CardsApplication.java`
   - AuditorAware
     - `AuditAwareImpl.java`
+
+### Section 01 - 8
+
+  - 프로젝트 세부 로직 완성
+    - accounts
+    - loans
+  - 프로젝트 잘못 생성하여 다시 작성....

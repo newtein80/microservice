@@ -1,4 +1,4 @@
-package com.mobigen.cards.audit;
+package com.mobigen.accounts.audit;
 
 import java.util.Optional;
 
@@ -18,7 +18,7 @@ public class AuditAwareImpl implements AuditorAware<String> {
      */
     @Override
     public Optional<String> getCurrentAuditor() {
-        return Optional.of("CARDS_MS");
+        return Optional.of("ACCOUNTS_MS");
     }
 	
 }

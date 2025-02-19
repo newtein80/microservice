@@ -1,4 +1,4 @@
-package com.mobigen.cards.entity;
+package com.mobigen.accounts.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

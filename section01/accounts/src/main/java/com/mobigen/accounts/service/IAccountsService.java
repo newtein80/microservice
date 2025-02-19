@@ -1,6 +1,6 @@
-package com.mobigen.cards.service;
+package com.mobigen.accounts.service;
 
-import com.mobigen.cards.dto.CustomerDto;
+import com.mobigen.accounts.dto.CustomerDto;
 
 public interface IAccountsService { // 메서드에서 대한 명세를 작성하고 세부사항은 인터페이스를 구현한 클래스에서 작성한다.
     /**

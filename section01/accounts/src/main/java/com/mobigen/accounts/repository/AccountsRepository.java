@@ -1,4 +1,4 @@
-package com.mobigen.cards.repository;
+package com.mobigen.accounts.repository;
 
 import java.util.Optional;
 
@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.stereotype.Repository;
 
-import com.mobigen.cards.entity.Accounts;
+import com.mobigen.accounts.entity.Accounts;
 
 import jakarta.transaction.Transactional;
 

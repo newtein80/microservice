@@ -14,8 +14,8 @@ import io.swagger.v3.oas.annotations.info.License;
 @SpringBootApplication
 @OpenAPIDefinition(
 	info = @Info(
-		title = "Accounts microservice REST API Documentation",
-		description = "MSA - Accounts microservice REST API Documentation",
+		title = "Cards microservice REST API Documentation",
+		description = "MSA - Cards microservice REST API Documentation",
 		version = "v1",
 		contact = @Contact(
 			name = "group1-team2",
@@ -28,7 +28,7 @@ import io.swagger.v3.oas.annotations.info.License;
 		)
 	),
 	externalDocs = @ExternalDocumentation(
-		description =  "EazyBank Accounts microservice REST API Documentation",
+		description =  "MSA - Cards microservice REST API Documentation",
 		url = "https://ip:port/swagger-ui.html"
 	)
 )

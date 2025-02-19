@@ -1,7 +1,7 @@
-package com.mobigen.cards.mapper;
+package com.mobigen.accounts.mapper;
 
-import com.mobigen.cards.dto.CustomerDto;
-import com.mobigen.cards.entity.Customer;
+import com.mobigen.accounts.dto.CustomerDto;
+import com.mobigen.accounts.entity.Customer;
 
 public class CustomerMapper {
     public static CustomerDto mapToCustomerDto(Customer customer, CustomerDto customerDto) {

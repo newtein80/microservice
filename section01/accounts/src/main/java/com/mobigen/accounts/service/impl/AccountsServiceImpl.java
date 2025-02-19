@@ -1,22 +1,22 @@
-package com.mobigen.cards.service.impl;
+package com.mobigen.accounts.service.impl;
 
 import java.util.Optional;
 import java.util.Random;
 
 import org.springframework.stereotype.Service;
 
-import com.mobigen.cards.constants.AccountsConstants;
-import com.mobigen.cards.dto.AccountsDto;
-import com.mobigen.cards.dto.CustomerDto;
-import com.mobigen.cards.entity.Accounts;
-import com.mobigen.cards.entity.Customer;
-import com.mobigen.cards.exception.CustomerAlreadyExistsException;
-import com.mobigen.cards.exception.ResourceNotFoundException;
-import com.mobigen.cards.mapper.AccountsMapper;
-import com.mobigen.cards.mapper.CustomerMapper;
-import com.mobigen.cards.repository.AccountsRepository;
-import com.mobigen.cards.repository.CustomerRepository;
-import com.mobigen.cards.service.IAccountsService;
+import com.mobigen.accounts.constants.AccountsConstants;
+import com.mobigen.accounts.dto.AccountsDto;
+import com.mobigen.accounts.dto.CustomerDto;
+import com.mobigen.accounts.entity.Accounts;
+import com.mobigen.accounts.entity.Customer;
+import com.mobigen.accounts.exception.CustomerAlreadyExistsException;
+import com.mobigen.accounts.exception.ResourceNotFoundException;
+import com.mobigen.accounts.mapper.AccountsMapper;
+import com.mobigen.accounts.mapper.CustomerMapper;
+import com.mobigen.accounts.repository.AccountsRepository;
+import com.mobigen.accounts.repository.CustomerRepository;
+import com.mobigen.accounts.service.IAccountsService;
 
 import lombok.AllArgsConstructor;
 

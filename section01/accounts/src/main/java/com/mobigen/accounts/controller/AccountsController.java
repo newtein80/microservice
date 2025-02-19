@@ -1,4 +1,4 @@
-package com.mobigen.cards.controller;
+package com.mobigen.accounts.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -13,11 +13,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.mobigen.cards.constants.AccountsConstants;
-import com.mobigen.cards.dto.CustomerDto;
-import com.mobigen.cards.dto.ErrorResponseDto;
-import com.mobigen.cards.dto.ResponseDto;
-import com.mobigen.cards.service.IAccountsService;
+import com.mobigen.accounts.constants.AccountsConstants;
+import com.mobigen.accounts.dto.CustomerDto;
+import com.mobigen.accounts.dto.ErrorResponseDto;
+import com.mobigen.accounts.dto.ResponseDto;
+import com.mobigen.accounts.service.IAccountsService;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;

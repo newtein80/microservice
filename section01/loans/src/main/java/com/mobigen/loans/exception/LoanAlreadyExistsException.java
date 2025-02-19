@@ -1,12 +1,12 @@
-package com.mobigen.cards.exception;
+package com.mobigen.loans.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 @ResponseStatus(value = HttpStatus.BAD_REQUEST)
-public class CustomerAlreadyExistsException extends RuntimeException {
+public class LoanAlreadyExistsException extends RuntimeException {
 
-    public CustomerAlreadyExistsException(String message) {
+    public LoanAlreadyExistsException(String message){
         super(message);
     }
 
