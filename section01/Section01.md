@@ -59,10 +59,10 @@
 ### Section 01 - 2
 
 - BaseEntity 클래스 생성
-  - BaseEntity
+  - `BaseEntity.java`
 - Entity 클래스 생성
-  - Account
-  - Customer
+  - `Account.java`
+  - `Customer.java`
 - `@EnableJpaAuditing` 적용
   - `@EntityListeners(AuditingEntityListener.class)` 과 같이 사용
 
@@ -70,17 +70,17 @@
 
 - DTO 생성
   - DTO 생성... @Entity 또는 (VO 등등)의 경우 raw 데이터로 간주하고 dto의 경우 raw 데이터를 담는 그릇이라고 보면된다.(개인)
-    - AccountsDto
-    - CustomerDto
+    - `AccountsDto.java`
+    - `CustomerDto.java`
   - Swagger, Validation annotation 적용
     (참고: [Hibernate는 @Column과 @Size 사용 시 길이를 어떻게 판단할까 / 주의할 점](https://melonturtle.netlify.app/hibernate-column-size/))
 
 ### Section 01 - 4
 
 - mapper 클래스 추가 (convert Entity to DTO)
-  - AccountsMapper
+  - `AccountsMapper.java`
     - Accounts -> AccountsDto, AccountsDto -> Accounts 변환
-  - CustomerMapper
+  - `CustomerMapper.java`
     - Customer -> CustomerDto, CustomerDto -> Customer 변환
 
 ### Section 01 - 5
@@ -88,25 +88,34 @@
   - Repository 와 Service 생성, 공통 예외 처리 클래스 추가
     - 간단하게 Repository 는 데이터베이스와 연결되어 쿼리수행하는 클래스, Service는 Repository 를 통해 가져온 데이터를 `서비스`하는 클래스
   - Repository
-    - AccountsRepository
-    - CustomerRepository
+    - `AccountsRepository.java`
+    - `CustomerRepository.java`
     - (참고: [[Java] Optional이란? Optional 개념 및 사용법](https://mangkyu.tistory.com/70))
     - (참고: [[JPA] @Modifying이란? 그리고 주의할점  (벌크 연산)](https://hstory0208.tistory.com/entry/JPA-Modifying%EC%9D%B4%EB%9E%80-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EC%A3%BC%EC%9D%98%ED%95%A0%EC%A0%90-%EB%B2%8C%ED%81%AC-%EC%97%B0%EC%82%B0))
     - (참고: [[Spring JPA] @Modifying 어노테이션](https://frogand.tistory.com/174))
   - Service
-    - IAccountsService
-    - AccountsServiceImpl
+    - `IAccountsService.java`
+    - `AccountsServiceImpl.java`
   - 예외 클래스
-    - CustomerAlreadyExistsException
-    - ResourceNotFoundException
+    - `CustomerAlreadyExistsException.java`
+    - `ResourceNotFoundException.java`
   - 공통 String 변수 클래스
-    - AccountsConstants
+    - `AccountsConstants.java`
 
 ### Section 01 - 6
 
   - Controller 추가, Swagger 코드 추가
-    - AccountsController
+    - `AccountsController.java`
   - 요청 및 응답 DTO 추가
-    - ErrorResponseDto
-    - ResponseDto
-  
+    - `ErrorResponseDto.java`
+    - `ResponseDto.java`
+
+### Section 01 - 7
+
+  - 예외 핸들러 추가
+    - `GlobalExceptionHandler.java`
+    - (참고: [ExceptionHandler와 ControllerAdvice를 알아보자](https://tecoble.techcourse.co.kr/post/2023-05-03-ExceptionHandler-ControllerAdvice/))
+  - main 클래스 swagger 내용 정의
+    - `CardsApplication.java`
+  - AuditorAware
+    - `AuditAwareImpl.java`
