@@ -74,3 +74,11 @@
     - CustomerDto
   - Swagger, Validation annotation 적용
     (참고: [Hibernate는 @Column과 @Size 사용 시 길이를 어떻게 판단할까 / 주의할 점](https://melonturtle.netlify.app/hibernate-column-size/))
+
+### Section 01 - 4
+
+- mapper 클래스 추가 (convert Entity to DTO)
+  - AccountsMapper
+    - Accounts -> AccountsDto, AccountsDto -> Accounts 변환
+  - CustomerMapper
+    - Customer -> CustomerDto, CustomerDto -> Customer 변환
