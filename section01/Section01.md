@@ -65,3 +65,12 @@
   - Customer
 - `@EnableJpaAuditing` 적용
   - `@EntityListeners(AuditingEntityListener.class)` 과 같이 사용
+
+### Section 01 - 3
+
+- DTO 생성
+  - DTO 생성... @Entity 또는 (VO 등등)의 경우 raw 데이터로 간주하고 dto의 경우 raw 데이터를 담는 그릇이라고 보면된다.(개인)
+    - AccountsDto
+    - CustomerDto
+  - Swagger, Validation annotation 적용
+    (참고: [Hibernate는 @Column과 @Size 사용 시 길이를 어떻게 판단할까 / 주의할 점](https://melonturtle.netlify.app/hibernate-column-size/))
