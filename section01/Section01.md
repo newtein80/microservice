@@ -82,3 +82,23 @@
     - Accounts -> AccountsDto, AccountsDto -> Accounts 변환
   - CustomerMapper
     - Customer -> CustomerDto, CustomerDto -> Customer 변환
+
+### Section 01 - 5
+
+  - Repository 와 Service 생성, 공통 예외 처리 클래스 추가
+    - 간단하게 Repository 는 데이터베이스와 연결되어 쿼리수행하는 클래스, Service는 Repository 를 통해 가져온 데이터를 `서비스`하는 클래스
+  - Repository
+    - AccountsRepository
+    - CustomerRepository
+    - (참고: [[Java] Optional이란? Optional 개념 및 사용법](https://mangkyu.tistory.com/70))
+    - (참고: [[JPA] @Modifying이란? 그리고 주의할점  (벌크 연산)](https://hstory0208.tistory.com/entry/JPA-Modifying%EC%9D%B4%EB%9E%80-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EC%A3%BC%EC%9D%98%ED%95%A0%EC%A0%90-%EB%B2%8C%ED%81%AC-%EC%97%B0%EC%82%B0))
+    - (참고: [[Spring JPA] @Modifying 어노테이션](https://frogand.tistory.com/174))
+  - Service
+    - IAccountsService
+    - AccountsServiceImpl
+  - 예외 클래스
+    - CustomerAlreadyExistsException
+    - ResourceNotFoundException
+  - 공통 String 변수 클래스
+    - AccountsConstants
+  
