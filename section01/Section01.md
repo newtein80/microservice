@@ -55,3 +55,13 @@
 - Password: 없음(공백)
 
 좌측 메뉴에서 schema.sql 에 정의된 테이블 확인
+
+### Section 01 - 2
+
+- BaseEntity 클래스 생성
+  - BaseEntity
+- Entity 클래스 생성
+  - Account
+  - Customer
+- `@EnableJpaAuditing` 적용
+  - `@EntityListeners(AuditingEntityListener.class)` 과 같이 사용
